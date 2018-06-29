@@ -19,19 +19,4 @@ DELETE /snacks/:id
 ## Data looks like
 1. An array of snack objects.
 
-[
-      {
-          "category": "meat",
-          "description": "A round shaped beef-ragout version of croquette, typically containing a mixture of beef or veal (minced or chopped), beef broth, butter, flour for thickening, parsley, salt and pepper, resulting in a thick ragout.",
-          "id": "cb646602-ade8-4d4e-b638-99466c41ebb9",
-          "name": "Bitterballen",
-          "origin": "Netherlands"
-      },
-      {
-          "category": "vegan",
-          "description": "Traditional banana fritters",
-          "id": "fd89b4e4-2c17-46e5-bd41-e258bc64feec",
-          "name": "Pazham Pori",
-          "origin": "South India"
-      }
-  ]
+![Data](.data.png)
