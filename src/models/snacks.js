@@ -65,7 +65,6 @@ const deleteOne = (id) => {
   const errors = [];
   let response;
   const snackId = snacks.findIndex(snack => snack.id === id);
-  console.log(snackId);
 
   if(snackId === -1){
     errors.push({status: 404, error: "Id not found"})
@@ -74,7 +73,6 @@ const deleteOne = (id) => {
     response = snacks[snackId];
     snacks.splice(snackId, 1);
   }
-  console.log(response);
   return response;
 }
 

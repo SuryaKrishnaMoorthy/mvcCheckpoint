@@ -19,4 +19,4 @@ DELETE /snacks/:id
 ## Data looks like
 1. An array of snack objects.
 
-![Data](.data.png)
+![Data](./data.png)

@@ -36,7 +36,7 @@ const deleteOne = (req, res, next) => {
 
   if (result.errors) return next(result.errors);
 
-  res.status(200).send({ data :result});
+  res.status(204).json({ data :result});
 }
 
 module.exports = { getAll, getOne, create, update, deleteOne }
