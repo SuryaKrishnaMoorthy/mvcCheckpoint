@@ -46,7 +46,7 @@ const update = (id,body) => {
 
   const snack = snacks.find(snack => snack.id === id);
   if(!snack){
-    errors.push({status: 404, error: "Id not found"})
+    errors.push({status: 404, error: `${id} not found`})
     response = {errors};
   } else if(!name || !origin || !category || !description){
     errors.push({status: 400, error: "Please provide name, origin, category and description of the snack"});
@@ -67,7 +67,7 @@ const deleteOne = (id) => {
   const snackId = snacks.findIndex(snack => snack.id === id);
 
   if(snackId === -1){
-    errors.push({status: 404, error: "Id not found"})
+    errors.push({status: 404, error: `${id} not found`})
     response = {errors};
   }else{
     response = snacks[snackId];
